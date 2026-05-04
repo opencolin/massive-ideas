@@ -1,0 +1,12 @@
+{
+  "query": "AI browser automation tools for B2B sales teams",
+  "category": "web research automation",
+  "country": "US",
+  "city": "San Francisco",
+  "device": "desktop",
+  "urls": [
+    "https://docs.joinmassive.com/web-render/ai"
+  ],
+  "max_results": 4,
+  "model": "chatgpt"
+}

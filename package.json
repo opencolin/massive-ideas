@@ -1,0 +1,27 @@
+{
+  "name": "massive-ideas",
+  "version": "0.1.0",
+  "description": "Executable starter kit for 100 Massive MCP product ideas.",
+  "type": "module",
+  "bin": {
+    "massive-ideas": "./src/cli.js"
+  },
+  "scripts": {
+    "list": "node src/cli.js list",
+    "show": "node src/cli.js show",
+    "run": "node src/cli.js run",
+    "run:all": "node src/cli.js run-all --mode mock --out runs/mock-all",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "massive",
+    "mcp",
+    "research",
+    "web-render",
+    "agents"
+  ],
+  "license": "MIT"
+}
