@@ -1,31 +1,133 @@
 # Massive MCP Ideas
 
-This repository contains 100 buildable product concepts for the Massive MCP server. Each idea was expanded into a small MVP package with a product README, implementation sketch, and evaluation plan, then wired into a shared CLI runner.
+Executable starter kit for 100 product ideas built around the Massive MCP server.
 
-The work is organized as a swarm output: one project folder per idea, each scoped around Massive MCP primitives for web fetch, search, chatbot answers with sources, geo targeting, JS rendering, captcha handling, and account status checks. The CLI turns those project briefs into runnable Massive-style research workflows.
+This repo started as a swarm-generated catalog of ideas, then became a runnable CLI that can list, inspect, and run every concept through a shared Massive-style research pipeline. Each idea has its own product brief, prototype sketch, and evaluation plan, while the CLI provides one consistent way to test the whole set.
 
-## What Is In This Repo
+## Highlights
 
-- `swarm/SWARM.md`: the original 100-idea assignment manifest.
-- `swarm/projects/001-...` through `swarm/projects/100-...`: one folder per concept.
-- `src/`: the shared runner, CLI, Massive client adapters, prompt builder, and report renderer.
-- `examples/sample-input.json`: a reusable input payload for mock and live runs.
-- `test/`: coverage tests for loading and running the idea set.
-- Each project folder contains:
-  - `README.md`: product framing, target user, workflow, Massive MCP usage, and guardrails.
-  - `prototype.md`: data model, CLI/UI/API shape, prompts, pipeline, and implementation notes.
-  - `evaluation.md`: test cases, metrics, failure modes, acceptance criteria, and launch gates.
+- 100 Massive MCP product concepts, from lead enrichment to AI citation scoring.
+- 300 project docs: one `README.md`, `prototype.md`, and `evaluation.md` per idea.
+- Shared Node.js CLI for listing, inspecting, and running ideas.
+- Deterministic mock mode for local demos without a Massive token.
+- Live mode that calls Massive Web Render endpoints when `MASSIVE_TOKEN` is set.
+- No runtime package dependencies; Node 20+ is enough.
 
-## Massive MCP Assumptions
+## Massive Capabilities Used
 
-The project briefs assume the Massive MCP server exposes these tools:
+The ideas and runner are built around four Massive MCP primitives:
 
-- `web_fetch`: fetch a URL as Markdown, rendered HTML, or raw HTML, with country, city, and device targeting.
-- `web_search`: run Google searches and return structured SERP data, including organic results, AI overview, and People Also Ask data.
-- `ai_chat_completion`: query ChatGPT, Gemini, Perplexity, or Copilot and return an answer with sources.
-- `account_status`: check remaining credits before running larger jobs.
+- `account_status`: check credit balance before a run.
+- `web_search`: run Google searches and return structured SERP evidence.
+- `web_fetch`: fetch public pages as Markdown, rendered HTML, or raw HTML.
+- `ai_chat_completion`: synthesize source-backed answers from ChatGPT, Gemini, Perplexity, or Copilot.
 
-Many concepts also rely on Massive Web Render capabilities such as JS rendering, captcha handling, and localized browsing.
+The briefs also assume Massive Web Render features such as JS rendering, captcha handling, country/city targeting, and device emulation.
+
+## Quick Start
+
+Run the tests:
+
+```bash
+npm test
+```
+
+List all 100 ideas:
+
+```bash
+npm run list
+```
+
+Inspect a single idea:
+
+```bash
+node src/cli.js show --idea 088
+```
+
+Run one idea in mock mode:
+
+```bash
+node src/cli.js run \
+  --idea 001 \
+  --mode mock \
+  --input examples/sample-input.json \
+  --format markdown
+```
+
+Generate mock reports for all 100 ideas:
+
+```bash
+npm run run:all
+```
+
+## Live Massive Runs
+
+Set a Massive API token, then use `--mode live`:
+
+```bash
+export MASSIVE_TOKEN=...
+
+node src/cli.js run \
+  --idea 100 \
+  --mode live \
+  --input examples/sample-input.json \
+  --out runs/100-live.json
+```
+
+Live mode calls:
+
+- `/users` for account status
+- `/search` for SERP evidence
+- `/browser` for rendered page fetches
+- `/ai` for chatbot completions with sources
+
+Use mock mode for development and live mode only when you want real Massive calls and credit usage.
+
+## CLI Commands
+
+```bash
+node src/cli.js list [--json]
+node src/cli.js show --idea 001
+node src/cli.js run --idea 001 [--input examples/sample-input.json] [--mode mock|live] [--format json|markdown]
+node src/cli.js run-all [--mode mock|live] [--out runs/mock-all]
+```
+
+Useful options:
+
+- `--idea`: idea id, slug, or full folder name, such as `001`, `massive-mcp-playground`, or `100-massive-mcp-playground`.
+- `--mode`: `mock` for deterministic local fixtures, `live` for Massive API calls.
+- `--input`: JSON payload with query, category, target country/city/device, URLs, and model.
+- `--format`: `json` or `markdown` for single-idea runs.
+- `--out`: output file for `run`, or output directory for `run-all`.
+
+## Repo Layout
+
+```text
+.
+├── examples/
+│   └── sample-input.json
+├── src/
+│   ├── cli.js
+│   ├── ideas.js
+│   ├── massive-client.js
+│   ├── prompts.js
+│   ├── report.js
+│   └── runner.js
+├── swarm/
+│   ├── SWARM.md
+│   └── projects/
+│       ├── 001-yc-lead-enricher/
+│       ├── ...
+│       └── 100-massive-mcp-playground/
+└── test/
+    └── ideas.test.js
+```
+
+Each project folder contains:
+
+- `README.md`: product framing, target user, workflow, Massive MCP usage, and guardrails.
+- `prototype.md`: data model, CLI/UI/API shape, prompts, pipeline, and implementation notes.
+- `evaluation.md`: test cases, metrics, failure modes, acceptance criteria, and launch gates.
 
 ## Idea Categories
 
@@ -42,98 +144,33 @@ The 100 ideas cover:
 - AI answer comparison, citation quality, hallucination checks, and demos
 - Personal research tools for deals, events, buying decisions, and itinerary freshness
 
-## Quick Start
+## Good Starting Points
 
-Run the tests:
+- `001-yc-lead-enricher`: closest to the original YC lead-enrichment test.
+- `088-mcp-demo-app`: best developer-facing showcase of fetch/search/chat differences.
+- `100-massive-mcp-playground`: best foundation for a tool-call playground.
+- `082-source-citation-quality-scorer`: useful for evaluating chatbot source quality.
+- `011-pricing-tracker`: practical geo/device-targeted web-rendering use case.
+
+## Validation
+
+The repo currently verifies that:
+
+- All 100 named idea folders are present.
+- Every idea has the required three docs.
+- Idea lookup works by id and slug.
+- A representative idea can run in mock mode.
+- Mock `run-all` can generate reports for all 100 ideas.
+
+Run:
 
 ```bash
 npm test
+node src/cli.js run-all --mode mock --input examples/sample-input.json --out /tmp/massive-ideas-smoke
 ```
 
-List all ideas:
+## Current Scope
 
-```bash
-npm run list
-```
+This is a shared executable starter kit, not 100 fully separate production apps. The runner proves that every idea can be loaded, prompted, sourced, synthesized, and reported through one Massive-style workflow.
 
-Inspect one idea:
-
-```bash
-node src/cli.js show --idea 088
-```
-
-Run one idea in deterministic mock mode:
-
-```bash
-node src/cli.js run \
-  --idea 001 \
-  --mode mock \
-  --input examples/sample-input.json \
-  --format markdown
-```
-
-Generate mock reports for all 100 ideas:
-
-```bash
-npm run run:all
-```
-
-Run against the live Massive Web Render API:
-
-```bash
-export MASSIVE_TOKEN=...
-node src/cli.js run \
-  --idea 100 \
-  --mode live \
-  --input examples/sample-input.json \
-  --out runs/100-live.json
-```
-
-The live adapter calls the same Massive endpoints used by the MCP server:
-
-- `/users` for `account_status`
-- `/browser` for `web_fetch`
-- `/search` for `web_search`
-- `/ai` for `ai_chat_completion`
-
-## Repository Browsing
-
-Browse the manifest:
-
-```bash
-sed -n '1,140p' swarm/SWARM.md
-```
-
-Open one project:
-
-```bash
-ls swarm/projects/088-mcp-demo-app
-sed -n '1,120p' swarm/projects/088-mcp-demo-app/README.md
-```
-
-Check repo coverage:
-
-```bash
-find swarm/projects -mindepth 1 -maxdepth 1 -type d -name '???-*' | wc -l
-find swarm/projects -mindepth 2 -maxdepth 2 -type f | wc -l
-```
-
-Expected counts:
-
-- 100 named project folders
-- 300 project files
-
-## Review Notes
-
-This repository is now an executable starter kit, not 100 fully separate production apps. The implementation deliberately uses one shared runner so every idea can be listed, inspected, and run with the same command shape.
-
-The review pass confirmed:
-
-- All 100 named project folders are present.
-- Every project has `README.md`, `prototype.md`, and `evaluation.md`.
-- Empty setup placeholder folders were removed.
-- `.DS_Store` is ignored.
-- `npm test` passes.
-- Mock mode can generate reports for all 100 ideas without requiring a Massive token.
-
-The main gap is intentional: the shared runner is a foundation. The best next step is to promote the strongest ideas into dedicated product implementations, starting with `088-mcp-demo-app`, `001-yc-lead-enricher`, or `100-massive-mcp-playground`.
+The next step is to promote the strongest ideas into dedicated products with real UI, persistence, richer schemas, and tighter evaluation harnesses.
