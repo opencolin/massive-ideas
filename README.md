@@ -9,6 +9,7 @@ This repo started as a swarm-generated catalog of ideas, then became a runnable 
 - 100 Massive MCP product concepts, from lead enrichment to AI citation scoring.
 - 300 project docs: one `README.md`, `prototype.md`, and `evaluation.md` per idea.
 - Shared Node.js CLI for listing, inspecting, and running ideas.
+- Static idea atlas in `docs/` for browsing, searching, filtering, and opening project docs.
 - Deterministic mock mode for local demos without a Massive token.
 - Live mode that calls Massive Web Render endpoints when `MASSIVE_TOKEN` is set.
 - No runtime package dependencies; Node 20+ is enough.
@@ -60,6 +61,13 @@ Generate mock reports for all 100 ideas:
 npm run run:all
 ```
 
+Build the static idea atlas:
+
+```bash
+npm run build:web
+open docs/index.html
+```
+
 ## Live Massive Runs
 
 Set a Massive API token, then use `--mode live`:
@@ -104,23 +112,28 @@ Useful options:
 
 ```text
 .
-├── examples/
-│   └── sample-input.json
-├── src/
-│   ├── cli.js
-│   ├── ideas.js
-│   ├── massive-client.js
-│   ├── prompts.js
-│   ├── report.js
-│   └── runner.js
-├── swarm/
-│   ├── SWARM.md
-│   └── projects/
-│       ├── 001-yc-lead-enricher/
-│       ├── ...
-│       └── 100-massive-mcp-playground/
-└── test/
-    └── ideas.test.js
+|-- examples/
+|   `-- sample-input.json
+|-- docs/
+|   |-- index.html
+|   |-- styles.css
+|   |-- app.js
+|   `-- ideas-data.js
+|-- src/
+|   |-- cli.js
+|   |-- ideas.js
+|   |-- massive-client.js
+|   |-- prompts.js
+|   |-- report.js
+|   `-- runner.js
+|-- swarm/
+|   |-- SWARM.md
+|   `-- projects/
+|       |-- 001-yc-lead-enricher/
+|       |-- ...
+|       `-- 100-massive-mcp-playground/
+`-- test/
+    `-- ideas.test.js
 ```
 
 Each project folder contains:
@@ -158,6 +171,7 @@ The repo currently verifies that:
 
 - All 100 named idea folders are present.
 - Every idea has the required three docs.
+- The generated idea atlas contains 100 ideas.
 - Idea lookup works by id and slug.
 - A representative idea can run in mock mode.
 - Mock `run-all` can generate reports for all 100 ideas.

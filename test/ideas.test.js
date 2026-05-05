@@ -1,8 +1,10 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { listIdeas, readIdea } from "../src/ideas.js";
+import { readFile } from "node:fs/promises";
+import { listIdeas, readIdea, REPO_ROOT } from "../src/ideas.js";
 import { MockMassiveClient } from "../src/massive-client.js";
 import { runIdea } from "../src/runner.js";
+import path from "node:path";
 
 test("loads all 100 idea folders", async () => {
   const ideas = await listIdeas();
@@ -47,4 +49,14 @@ test("runs an idea in mock mode", async () => {
   assert.ok(result.tool_calls.web_fetch.length >= 1);
   assert.ok(result.sources.length >= 1);
   assert.match(result.synthesis.completion, /Mock chatgpt synthesis/);
+});
+
+test("generated idea atlas includes all 100 ideas", async () => {
+  const dataFile = await readFile(path.join(REPO_ROOT, "docs", "ideas-data.js"), "utf8");
+  const jsonText = dataFile
+    .replace(/^window\.MASSIVE_IDEAS_DATA = /, "")
+    .replace(/;\s*$/, "");
+  const data = JSON.parse(jsonText);
+  assert.equal(data.ideas.length, 100);
+  assert.equal(data.categories.length, 10);
 });

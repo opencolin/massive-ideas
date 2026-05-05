@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Massive MCP Idea Atlas</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Massive MCP</p>
+        <h1>Idea Atlas</h1>
+      </div>
+      <div class="stats" aria-label="Idea stats">
+        <span><strong id="visibleCount">100</strong> shown</span>
+        <span><strong>100</strong> ideas</span>
+        <span><strong>300</strong> docs</span>
+      </div>
+    </header>
+
+    <section class="controls" aria-label="Idea filters">
+      <label class="search">
+        <span>Search</span>
+        <input id="searchInput" type="search" placeholder="lead enrichment, pricing, AI citations...">
+      </label>
+      <div class="filters" id="categoryFilters"></div>
+      <select id="tagSelect" aria-label="Filter by tag">
+        <option value="all">All tags</option>
+      </select>
+      <select id="sortSelect" aria-label="Sort ideas">
+        <option value="id">Sort by id</option>
+        <option value="title">Sort by title</option>
+        <option value="category">Sort by category</option>
+      </select>
+    </section>
+
+    <section class="spotlight" id="spotlight" aria-live="polite"></section>
+
+    <section class="idea-grid" id="ideaGrid" aria-label="Massive MCP ideas"></section>
+  </main>
+
+  <script src="./ideas-data.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
