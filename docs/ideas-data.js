@@ -1,5 +1,5 @@
 window.MASSIVE_IDEAS_DATA = {
-  "generated_at": "2026-05-05T15:24:42.205Z",
+  "generated_at": "2026-05-05T15:32:11.449Z",
   "categories": [
     {
       "name": "Sales",
@@ -40,6 +40,10 @@ window.MASSIVE_IDEAS_DATA = {
     {
       "name": "Personal",
       "accent": "orange"
+    },
+    {
+      "name": "Existing Builds",
+      "accent": "graphite"
     }
   ],
   "ideas": [
@@ -2227,6 +2231,70 @@ window.MASSIVE_IDEAS_DATA = {
         "prototype": "https://github.com/opencolin/massive-ideas/tree/main/swarm/projects/100-massive-mcp-playground/prototype.md",
         "evaluation": "https://github.com/opencolin/massive-ideas/tree/main/swarm/projects/100-massive-mcp-playground/evaluation.md",
         "folder": "https://github.com/opencolin/massive-ideas/tree/main/swarm/projects/100-massive-mcp-playground"
+      }
+    },
+    {
+      "id": "101",
+      "slug": "massive-brand-visibility-tracker",
+      "folder": "101-massive-brand-visibility-tracker",
+      "title": "Massive Brand Visibility Tracker",
+      "summary": "MVP for a daily AI brand-visibility tracker based on [opencolin/massive](https://github.com/opencolin/massive). It queries ChatGPT, Gemini, Perplexity, and Copilot, extracts brand mentions, and tracks share-of-voice drift.",
+      "category": "Existing Builds",
+      "accent": "graphite",
+      "tags": [
+        "sales",
+        "search",
+        "ai",
+        "monitoring",
+        "hiring"
+      ],
+      "links": {
+        "readme": "https://github.com/opencolin/massive-ideas/tree/main/swarm/projects/101-massive-brand-visibility-tracker/README.md",
+        "prototype": "https://github.com/opencolin/massive-ideas/tree/main/swarm/projects/101-massive-brand-visibility-tracker/prototype.md",
+        "evaluation": "https://github.com/opencolin/massive-ideas/tree/main/swarm/projects/101-massive-brand-visibility-tracker/evaluation.md",
+        "folder": "https://github.com/opencolin/massive-ideas/tree/main/swarm/projects/101-massive-brand-visibility-tracker"
+      }
+    },
+    {
+      "id": "102",
+      "slug": "massive-consensus-engine",
+      "folder": "102-massive-consensus-engine",
+      "title": "Massive Consensus Engine",
+      "summary": "MVP for a multi-LLM consensus and lead-enrichment engine based on [opencolin/massive-consensus](https://github.com/opencolin/massive-consensus). It queries four assistants, compares answers and sources, and flags disagreement or hallucination risk.",
+      "category": "Existing Builds",
+      "accent": "graphite",
+      "tags": [
+        "sales",
+        "ai",
+        "research"
+      ],
+      "links": {
+        "readme": "https://github.com/opencolin/massive-ideas/tree/main/swarm/projects/102-massive-consensus-engine/README.md",
+        "prototype": "https://github.com/opencolin/massive-ideas/tree/main/swarm/projects/102-massive-consensus-engine/prototype.md",
+        "evaluation": "https://github.com/opencolin/massive-ideas/tree/main/swarm/projects/102-massive-consensus-engine/evaluation.md",
+        "folder": "https://github.com/opencolin/massive-ideas/tree/main/swarm/projects/102-massive-consensus-engine"
+      }
+    },
+    {
+      "id": "103",
+      "slug": "massive-meetup-finder",
+      "folder": "103-massive-meetup-finder",
+      "title": "Massive Meetup Finder",
+      "summary": "MVP for a city/topic meetup calendar finder based on [opencolin/massive-meetup](https://github.com/opencolin/massive-meetup). It discovers recurring Luma calendars, enriches organizers and events, scores fit, and exports a ranked table.",
+      "category": "Existing Builds",
+      "accent": "graphite",
+      "tags": [
+        "sales",
+        "search",
+        "geo",
+        "ai",
+        "hiring"
+      ],
+      "links": {
+        "readme": "https://github.com/opencolin/massive-ideas/tree/main/swarm/projects/103-massive-meetup-finder/README.md",
+        "prototype": "https://github.com/opencolin/massive-ideas/tree/main/swarm/projects/103-massive-meetup-finder/prototype.md",
+        "evaluation": "https://github.com/opencolin/massive-ideas/tree/main/swarm/projects/103-massive-meetup-finder/evaluation.md",
+        "folder": "https://github.com/opencolin/massive-ideas/tree/main/swarm/projects/103-massive-meetup-finder"
       }
     }
   ]

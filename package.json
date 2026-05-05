@@ -1,7 +1,7 @@
 {
   "name": "massive-ideas",
   "version": "0.1.0",
-  "description": "Executable starter kit for 100 Massive MCP product ideas.",
+  "description": "Executable starter kit for 103 Massive MCP product ideas.",
   "type": "module",
   "bin": {
     "massive-ideas": "./src/cli.js"

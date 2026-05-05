@@ -1,6 +1,6 @@
 # Massive MCP Build Swarm
 
-Goal: produce 100 small buildable experiments around the Massive MCP server.
+Goal: produce small buildable experiments around the Massive MCP server.
 
 Each project owns one folder under `swarm/projects/NN-slug`. Workers must not edit outside their assigned folder. Each MVP should assume the Massive MCP exposes:
 
@@ -117,3 +117,6 @@ Minimum useful artifact per project:
 98. Personal buying research assistant for any product category.
 99. Internet change journal tracking how a page/category/brand evolves weekly.
 100. Massive MCP playground showing exact tool calls and returned sources.
+101. Daily AI brand-visibility tracker based on `opencolin/massive`.
+102. Multi-LLM consensus and lead-enrichment engine based on `opencolin/massive-consensus`.
+103. City/topic meetup calendar finder based on `opencolin/massive-meetup`.

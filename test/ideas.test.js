@@ -6,11 +6,11 @@ import { MockMassiveClient } from "../src/massive-client.js";
 import { runIdea } from "../src/runner.js";
 import path from "node:path";
 
-test("loads all 100 idea folders", async () => {
+test("loads all 103 idea folders", async () => {
   const ideas = await listIdeas();
-  assert.equal(ideas.length, 100);
+  assert.equal(ideas.length, 103);
   assert.equal(ideas[0].id, "001");
-  assert.equal(ideas.at(-1).id, "100");
+  assert.equal(ideas.at(-1).id, "103");
 });
 
 test("each idea has the required documents", async () => {
@@ -51,12 +51,12 @@ test("runs an idea in mock mode", async () => {
   assert.match(result.synthesis.completion, /Mock chatgpt synthesis/);
 });
 
-test("generated idea atlas includes all 100 ideas", async () => {
+test("generated idea atlas includes all 103 ideas", async () => {
   const dataFile = await readFile(path.join(REPO_ROOT, "docs", "ideas-data.js"), "utf8");
   const jsonText = dataFile
     .replace(/^window\.MASSIVE_IDEAS_DATA = /, "")
     .replace(/;\s*$/, "");
   const data = JSON.parse(jsonText);
-  assert.equal(data.ideas.length, 100);
-  assert.equal(data.categories.length, 10);
+  assert.equal(data.ideas.length, 103);
+  assert.equal(data.categories.length, 11);
 });

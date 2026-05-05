@@ -15,7 +15,8 @@ const CATEGORIES = [
   { min: 61, max: 70, name: "Ops", accent: "slate" },
   { min: 71, max: 80, name: "Local", accent: "cyan" },
   { min: 81, max: 90, name: "AI", accent: "indigo" },
-  { min: 91, max: 100, name: "Personal", accent: "orange" }
+  { min: 91, max: 100, name: "Personal", accent: "orange" },
+  { min: 101, max: 110, name: "Existing Builds", accent: "graphite" }
 ];
 
 const TAG_RULES = [
@@ -64,6 +65,9 @@ function compact(text) {
 
 function createIdeaRecord(idea) {
   const category = categoryFor(idea.id);
+  if (!category) {
+    throw new Error(`No idea category configured for ${idea.id}-${idea.slug}`);
+  }
   const folder = `${idea.id}-${idea.slug}`;
   return {
     id: idea.id,
@@ -93,7 +97,8 @@ function buildDataJs(ideas) {
   return `window.MASSIVE_IDEAS_DATA = ${JSON.stringify(payload, null, 2)};\n`;
 }
 
-function buildHtml() {
+function buildHtml(ideaCount) {
+  const docCount = ideaCount * 3;
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -110,9 +115,9 @@ function buildHtml() {
         <h1>Idea Atlas</h1>
       </div>
       <div class="stats" aria-label="Idea stats">
-        <span><strong id="visibleCount">100</strong> shown</span>
-        <span><strong>100</strong> ideas</span>
-        <span><strong>300</strong> docs</span>
+        <span><strong id="visibleCount">${ideaCount}</strong> shown</span>
+        <span><strong>${ideaCount}</strong> ideas</span>
+        <span><strong>${docCount}</strong> docs</span>
       </div>
     </header>
 
@@ -162,6 +167,7 @@ function buildCss() {
   --cyan: #0d7f92;
   --indigo: #4458c9;
   --orange: #c04f15;
+  --graphite: #283039;
 }
 
 * {
@@ -304,7 +310,7 @@ select {
 
 .sparkline {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(32px, 1fr));
   gap: 6px;
   align-items: end;
 }
@@ -344,6 +350,7 @@ select {
 .idea-card[data-accent="cyan"] { border-top: 4px solid var(--cyan); }
 .idea-card[data-accent="indigo"] { border-top: 4px solid var(--indigo); }
 .idea-card[data-accent="orange"] { border-top: 4px solid var(--orange); }
+.idea-card[data-accent="graphite"] { border-top: 4px solid var(--graphite); }
 
 .meta {
   display: flex;
@@ -585,7 +592,7 @@ async function main() {
   const ideas = (await listIdeas()).map(createIdeaRecord);
   await mkdir(DOCS_DIR, { recursive: true });
   await Promise.all([
-    writeFile(path.join(DOCS_DIR, "index.html"), buildHtml(), "utf8"),
+    writeFile(path.join(DOCS_DIR, "index.html"), buildHtml(ideas.length), "utf8"),
     writeFile(path.join(DOCS_DIR, "styles.css"), buildCss(), "utf8"),
     writeFile(path.join(DOCS_DIR, "app.js"), buildAppJs(), "utf8"),
     writeFile(path.join(DOCS_DIR, "ideas-data.js"), buildDataJs(ideas), "utf8")
