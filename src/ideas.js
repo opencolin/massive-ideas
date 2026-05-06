@@ -11,11 +11,45 @@ function titleFromMarkdown(markdown, fallback) {
   return heading ? heading[1].trim() : fallback;
 }
 
-function firstParagraph(markdown) {
-  return markdown
+function stripMarkdown(text) {
+  return text
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+    .replace(/`([^`]+)`/g, "$1")
+    .replace(/[*_]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function listItemsFromBlock(block) {
+  return block
+    .split("\n")
+    .map((line) => line.trim().match(/^[-*]\s+(.+)$/)?.[1])
+    .filter(Boolean)
+    .map(stripMarkdown)
+    .map((item) => item.replace(/^([A-Z])(?=[a-z])/, (_, letter) => letter.toLowerCase()))
+    .filter(Boolean);
+}
+
+function joinList(items) {
+  if (items.length <= 2) return items.join(" and ");
+  return `${items.slice(0, -1).join(", ")}, and ${items.at(-1)}`;
+}
+
+function summaryFromMarkdown(markdown) {
+  const chunks = markdown
     .split(/\n{2,}/)
     .map((chunk) => chunk.trim())
-    .find((chunk) => chunk && !chunk.startsWith("#")) ?? "";
+    .filter((chunk) => chunk && !chunk.startsWith("#"));
+  const first = chunks[0] ?? "";
+
+  if (/:$/.test(first)) {
+    const items = listItemsFromBlock(chunks[1] ?? "").slice(0, 5);
+    if (items.length > 0) {
+      return stripMarkdown(`${first.replace(/:\s*$/, "")} ${joinList(items)}.`);
+    }
+  }
+
+  return stripMarkdown(first);
 }
 
 async function readProjectFiles(projectPath) {
@@ -52,7 +86,7 @@ export async function listIdeas() {
       title: titleFromMarkdown(documents.readme, slug.replaceAll("-", " ")),
       path: projectPath,
       files,
-      summary: firstParagraph(documents.readme),
+      summary: summaryFromMarkdown(documents.readme),
       documents
     });
   }

@@ -26,9 +26,13 @@ test("can resolve ideas by id and slug", async () => {
   const byId = await readIdea("001");
   const byNumber = await readIdea("1");
   const bySlug = await readIdea("massive-mcp-playground");
+  const existingBuild = await readIdea("101");
   assert.equal(byId.slug, "yc-lead-enricher");
   assert.equal(byNumber.id, "001");
   assert.equal(bySlug.id, "100");
+  assert.match(byId.summary, /fit score, buying trigger/i);
+  assert.doesNotMatch(byId.summary, /:$/);
+  assert.doesNotMatch(existingBuild.summary, /\[[^\]]+\]\([^)]+\)/);
 });
 
 test("runs an idea in mock mode", async () => {

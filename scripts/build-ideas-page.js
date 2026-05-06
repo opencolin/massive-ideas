@@ -56,11 +56,17 @@ function tagsFor(idea) {
 }
 
 function compact(text) {
-  return text
+  const normalized = text
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
     .replace(/\s+/g, " ")
     .replace(/`/g, "")
-    .trim()
-    .slice(0, 260);
+    .trim();
+
+  if (normalized.length <= 280) return normalized;
+
+  const cutoff = normalized.lastIndexOf(" ", 279);
+  const end = cutoff > 210 ? cutoff : 279;
+  return `${normalized.slice(0, end).replace(/[,:;.]$/, "")}...`;
 }
 
 function createIdeaRecord(idea) {

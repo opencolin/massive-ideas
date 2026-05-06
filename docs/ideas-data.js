@@ -1,5 +1,5 @@
 window.MASSIVE_IDEAS_DATA = {
-  "generated_at": "2026-05-06T05:32:38.749Z",
+  "generated_at": "2026-05-06T06:02:44.408Z",
   "categories": [
     {
       "name": "Sales",
@@ -52,7 +52,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "yc-lead-enricher",
       "folder": "001-yc-lead-enricher",
       "title": "YC Lead Enricher",
-      "summary": "MVP for turning a YC company URL or batch of company names into an actionable sales lead brief with:",
+      "summary": "MVP for turning a YC company URL or batch of company names into an actionable sales lead brief with fit score, buying trigger, intro angle, evidence links, and confidence level.",
       "category": "Sales",
       "accent": "jade",
       "tags": [
@@ -96,7 +96,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "account-research-bot",
       "folder": "003-account-research-bot",
       "title": "Account Research Bot",
-      "summary": "Build a pre-call account brief from a company website, current news, Google search results, and sourced chatbot synthesis. The MVP is a sales-research assistant for AEs, founders, and customer-success teams who need a credible 5-minute prep doc before talking ",
+      "summary": "Build a pre-call account brief from a company website, current news, Google search results, and sourced chatbot synthesis. The MVP is a sales-research assistant for AEs, founders, and customer-success teams who need a credible 5-minute prep doc before talking to a target account.",
       "category": "Sales",
       "accent": "jade",
       "tags": [
@@ -140,7 +140,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "territory-planner",
       "folder": "005-territory-planner",
       "title": "Territory Planner",
-      "summary": "Territory Planner finds target companies for sales or recruiting teams by combining city, industry, and hiring intent. The MVP turns a territory prompt like \"healthcare software companies in Austin hiring sales leaders\" into a sourced account list with confide",
+      "summary": "Territory Planner finds target companies for sales or recruiting teams by combining city, industry, and hiring intent. The MVP turns a territory prompt like \"healthcare software companies in Austin hiring sales leaders\" into a sourced account list with confidence scores and next...",
       "category": "Sales",
       "accent": "jade",
       "tags": [
@@ -293,7 +293,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "category-landscape-builder",
       "folder": "012-category-landscape-builder",
       "title": "Category Landscape Builder",
-      "summary": "Category Landscape Builder turns a market category prompt into a sourced landscape of vendors, themes, comparison pages, search demand, and AI-answer positioning. It combines Google SERPs with AI chatbot answers so a founder, marketer, investor, or product str",
+      "summary": "Category Landscape Builder turns a market category prompt into a sourced landscape of vendors, themes, comparison pages, search demand, and AI-answer positioning. It combines Google SERPs with AI chatbot answers so a founder, marketer, investor, or product strategist can...",
       "category": "Market",
       "accent": "blue",
       "tags": [
@@ -315,7 +315,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "feature-comparison-generator",
       "folder": "013-feature-comparison-generator",
       "title": "Feature Comparison Table Generator",
-      "summary": "Feature Comparison Table Generator turns public documentation, pricing pages, product pages, and comparison pages into a sourced feature matrix for a defined set of vendors. It helps product marketers, sales teams, founders, and analysts build accurate battlec",
+      "summary": "Feature Comparison Table Generator turns public documentation, pricing pages, product pages, and comparison pages into a sourced feature matrix for a defined set of vendors. It helps product marketers, sales teams, founders, and analysts build accurate battlecards and...",
       "category": "Market",
       "accent": "blue",
       "tags": [
@@ -337,7 +337,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "review-mining-bot",
       "folder": "014-review-mining-bot",
       "title": "Review Mining Bot",
-      "summary": "Review Mining Bot turns public customer reviews from G2, Capterra, app stores, and browser extension stores into source-backed product insights. It helps product, marketing, success, and sales teams understand what users praise, complain about, compare against",
+      "summary": "Review Mining Bot turns public customer reviews from G2, Capterra, app stores, and browser extension stores into source-backed product insights. It helps product, marketing, success, and sales teams understand what users praise, complain about, compare against, and repeatedly...",
       "category": "Market",
       "accent": "blue",
       "tags": [
@@ -359,7 +359,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "persona-pain-extractor",
       "folder": "015-persona-pain-extractor",
       "title": "Persona Pain-Point Extractor",
-      "summary": "Persona Pain-Point Extractor turns public forum threads, review pages, support docs, help-center comments, and community discussions into a sourced map of what a specific persona is struggling with. It is built for founders, product marketers, PMs, UX research",
+      "summary": "Persona Pain-Point Extractor turns public forum threads, review pages, support docs, help-center comments, and community discussions into a sourced map of what a specific persona is struggling with. It is built for founders, product marketers, PMs, UX researchers, and sales...",
       "category": "Market",
       "accent": "blue",
       "tags": [
@@ -403,7 +403,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "category-change-digest",
       "folder": "017-category-change-digest",
       "title": "What Changed This Week? Category Digest",
-      "summary": "What Changed This Week? Category Digest turns a market category into a weekly, sourced briefing on new launches, pricing changes, funding, partnerships, regulation, ranking shifts, and AI-answer shifts. It is built for teams that need to know what changed in a",
+      "summary": "What Changed This Week? Category Digest turns a market category into a weekly, sourced briefing on new launches, pricing changes, funding, partnerships, regulation, ranking shifts, and AI-answer shifts. It is built for teams that need to know what changed in a category without...",
       "category": "Market",
       "accent": "blue",
       "tags": [
@@ -425,7 +425,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "regional-demand-analyzer",
       "folder": "018-regional-demand-analyzer",
       "title": "Regional Demand Analyzer",
-      "summary": "Regional Demand Analyzer compares localized Google results and answer-engine sources to show where demand, buyer language, and competitive visibility differ by region. It helps growth, sales, and expansion teams decide which cities or countries deserve market ",
+      "summary": "Regional Demand Analyzer compares localized Google results and answer-engine sources to show where demand, buyer language, and competitive visibility differ by region. It helps growth, sales, and expansion teams decide which cities or countries deserve market entry, local...",
       "category": "Market",
       "accent": "blue",
       "tags": [
@@ -447,7 +447,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "tam-proxy-builder",
       "folder": "019-tam-proxy-builder",
       "title": "TAM Proxy Builder",
-      "summary": "TAM Proxy Builder turns a market hypothesis into a sourced, auditable total addressable market proxy by combining company counts, hiring demand, and search-volume intent signals. It is for cases where a perfect market-size report is unavailable, stale, too exp",
+      "summary": "TAM Proxy Builder turns a market hypothesis into a sourced, auditable total addressable market proxy by combining company counts, hiring demand, and search-volume intent signals. It is for cases where a perfect market-size report is unavailable, stale, too expensive, or too...",
       "category": "Market",
       "accent": "blue",
       "tags": [
@@ -469,7 +469,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "ai-overview-tracker",
       "folder": "020-ai-overview-tracker",
       "title": "AI Overview Tracker",
-      "summary": "AI Overview Tracker monitors how Google summarizes a category over time, what sources it cites, which brands or concepts appear, and how the answer changes across location, device, and query intent. It helps SEO, content, product marketing, and competitive int",
+      "summary": "AI Overview Tracker monitors how Google summarizes a category over time, what sources it cites, which brands or concepts appear, and how the answer changes across location, device, and query intent. It helps SEO, content, product marketing, and competitive intelligence teams...",
       "category": "Market",
       "accent": "blue",
       "tags": [
@@ -491,7 +491,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "serp-gap-analyzer",
       "folder": "021-serp-gap-analyzer",
       "title": "SERP Gap Analyzer",
-      "summary": "SERP Gap Analyzer turns a keyword cluster into a source-backed report showing where a company is absent, weak, or mispositioned across Google results and AI answers. It is built for SEO, content, and product marketing teams that need to know which competitors,",
+      "summary": "SERP Gap Analyzer turns a keyword cluster into a source-backed report showing where a company is absent, weak, or mispositioned across Google results and AI answers. It is built for SEO, content, and product marketing teams that need to know which competitors, pages, sources...",
       "category": "SEO",
       "accent": "amber",
       "tags": [
@@ -513,7 +513,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "ai-overview-inclusion-tracker",
       "folder": "022-ai-overview-inclusion-tracker",
       "title": "AI Overview Inclusion Tracker",
-      "summary": "AI Overview Inclusion Tracker monitors whether your brand, competitors, and priority sources appear in Google AI Overview-style results and chatbot answers for the commercial queries that matter. It turns answer-engine visibility into a repeatable report with ",
+      "summary": "AI Overview Inclusion Tracker monitors whether your brand, competitors, and priority sources appear in Google AI Overview-style results and chatbot answers for the commercial queries that matter. It turns answer-engine visibility into a repeatable report with citations, share of...",
       "category": "SEO",
       "accent": "amber",
       "tags": [
@@ -557,7 +557,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "programmatic-landing-research",
       "folder": "024-programmatic-landing-research",
       "title": "Programmatic Landing Research Assistant",
-      "summary": "Programmatic Landing Research Assistant turns a list of landing-page topics into source-backed page briefs: search intent, competitor page patterns, buyer language, proof points, FAQ candidates, and content gaps. It helps SEO, growth, and content teams create ",
+      "summary": "Programmatic Landing Research Assistant turns a list of landing-page topics into source-backed page briefs: search intent, competitor page patterns, buyer language, proof points, FAQ candidates, and content gaps. It helps SEO, growth, and content teams create many targeted pages...",
       "category": "SEO",
       "accent": "amber",
       "tags": [
@@ -578,7 +578,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "local-seo-rank-checker",
       "folder": "025-local-seo-rank-checker",
       "title": "Local SEO Rank Checker",
-      "summary": "Local SEO Rank Checker compares how a business, website, or listing ranks across city-targeted Google searches. It helps local SEO teams, agencies, franchise operators, and multi-location businesses understand where they are visible, where competitors outrank ",
+      "summary": "Local SEO Rank Checker compares how a business, website, or listing ranks across city-targeted Google searches. It helps local SEO teams, agencies, franchise operators, and multi-location businesses understand where they are visible, where competitors outrank them, and which...",
       "category": "SEO",
       "accent": "amber",
       "tags": [
@@ -600,7 +600,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "search-intent-classifier",
       "folder": "026-search-intent-classifier",
       "title": "Search Intent Classifier",
-      "summary": "Search Intent Classifier turns thousands of raw keywords into reliable intent labels, SERP evidence, and action-ready content buckets. It is built for SEO, content, growth, and marketplace teams that need to decide which keywords deserve landing pages, compari",
+      "summary": "Search Intent Classifier turns thousands of raw keywords into reliable intent labels, SERP evidence, and action-ready content buckets. It is built for SEO, content, growth, and marketplace teams that need to decide which keywords deserve landing pages, comparison pages, guides...",
       "category": "SEO",
       "accent": "amber",
       "tags": [
@@ -622,7 +622,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "blog-refresh-recommender",
       "folder": "027-blog-refresh-recommender",
       "title": "Blog Refresh Recommender",
-      "summary": "Blog Refresh Recommender turns an existing content inventory into a source-backed refresh queue by comparing each blog post against the current Google SERP, competing pages, and AI-answer sources. It helps SEO and content teams decide which posts need updates ",
+      "summary": "Blog Refresh Recommender turns an existing content inventory into a source-backed refresh queue by comparing each blog post against the current Google SERP, competing pages, and AI-answer sources. It helps SEO and content teams decide which posts need updates because the search...",
       "category": "SEO",
       "accent": "amber",
       "tags": [
@@ -666,7 +666,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "ai-source-outreach-db",
       "folder": "029-ai-source-outreach-db",
       "title": "AI Source Outreach DB",
-      "summary": "AI Source Outreach DB discovers the domains, authors, publishers, listicles, docs, and community pages that AI answers cite for a category, then turns those citations into an outreach database. It helps SEO, content, partnerships, and founder-led growth teams ",
+      "summary": "AI Source Outreach DB discovers the domains, authors, publishers, listicles, docs, and community pages that AI answers cite for a category, then turns those citations into an outreach database. It helps SEO, content, partnerships, and founder-led growth teams prioritize the...",
       "category": "SEO",
       "accent": "amber",
       "tags": [
@@ -688,7 +688,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "content-originality-checker",
       "folder": "030-content-originality-checker",
       "title": "Content Originality Checker",
-      "summary": "Content Originality Checker compares a draft, outline, or existing page against the top-ranking pages for its target queries. It helps content, SEO, and editorial teams see whether a piece has original substance or mostly repeats the same claims, sections, exa",
+      "summary": "Content Originality Checker compares a draft, outline, or existing page against the top-ranking pages for its target queries. It helps content, SEO, and editorial teams see whether a piece has original substance or mostly repeats the same claims, sections, examples, and wording...",
       "category": "SEO",
       "accent": "amber",
       "tags": [
@@ -710,7 +710,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "website-html-qa",
       "folder": "031-website-html-qa",
       "title": "Website Screenshot/HTML QA Bot",
-      "summary": "Website Screenshot/HTML QA Bot audits a page across countries, cities, and devices, then reports visual, HTML, accessibility, localization, and content issues with source-backed evidence. It helps growth, web, QA, and localization teams catch broken hero secti",
+      "summary": "Website Screenshot/HTML QA Bot audits a page across countries, cities, and devices, then reports visual, HTML, accessibility, localization, and content issues with source-backed evidence. It helps growth, web, QA, and localization teams catch broken hero sections, missing CTAs...",
       "category": "Product",
       "accent": "rose",
       "tags": [
@@ -753,7 +753,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "pricing-page-change-detector",
       "folder": "033-pricing-page-change-detector",
       "title": "Pricing Page Change Detector",
-      "summary": "Pricing Page Change Detector monitors competitor pricing pages for plan, packaging, discount, trial, seat-limit, usage-limit, and compliance-related changes. It helps sales, product marketing, RevOps, and founders catch commercially important pricing moves wit",
+      "summary": "Pricing Page Change Detector monitors competitor pricing pages for plan, packaging, discount, trial, seat-limit, usage-limit, and compliance-related changes. It helps sales, product marketing, RevOps, and founders catch commercially important pricing moves without manually...",
       "category": "Product",
       "accent": "rose",
       "tags": [
@@ -775,7 +775,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "onboarding-teardown-generator",
       "folder": "034-onboarding-teardown-generator",
       "title": "Onboarding Teardown Generator",
-      "summary": "Onboarding Teardown Generator audits a SaaS product's public signup, activation, and first-session experience. It turns a target domain plus persona into a structured teardown covering friction, clarity, time-to-value, trust signals, competitive patterns, and ",
+      "summary": "Onboarding Teardown Generator audits a SaaS product's public signup, activation, and first-session experience. It turns a target domain plus persona into a structured teardown covering friction, clarity, time-to-value, trust signals, competitive patterns, and prioritized...",
       "category": "Product",
       "accent": "rose",
       "tags": [
@@ -797,7 +797,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "mobile-rendering-regression",
       "folder": "035-mobile-rendering-regression",
       "title": "Mobile Rendering Regression Checker",
-      "summary": "Mobile Rendering Regression Checker compares how important pages render across mobile device profiles over time. It helps growth, SEO, design, and QA teams catch layout breakage that only appears in mobile web rendering: missing content, hidden calls to action",
+      "summary": "Mobile Rendering Regression Checker compares how important pages render across mobile device profiles over time. It helps growth, SEO, design, and QA teams catch layout breakage that only appears in mobile web rendering: missing content, hidden calls to action, intrusive...",
       "category": "Product",
       "accent": "rose",
       "tags": [
@@ -836,7 +836,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "public-docs-quality-scorer",
       "folder": "037-public-docs-quality-scorer",
       "title": "Public Docs Quality Scorer",
-      "summary": "Public Docs Quality Scorer audits public documentation sites and turns messy qualitative impressions into a source-backed scorecard. It helps developer relations, product, support, and platform teams find stale docs, missing onboarding paths, weak examples, br",
+      "summary": "Public Docs Quality Scorer audits public documentation sites and turns messy qualitative impressions into a source-backed scorecard. It helps developer relations, product, support, and platform teams find stale docs, missing onboarding paths, weak examples, broken links, poor...",
       "category": "Product",
       "accent": "rose",
       "tags": [
@@ -858,7 +858,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "api-docs-comparison-assistant",
       "folder": "038-api-docs-comparison-assistant",
       "title": "API Docs Comparison Assistant",
-      "summary": "API Docs Comparison Assistant compares public API documentation across vendors, versions, or products and produces a sourced technical diff. It helps developer relations, solutions engineers, platform teams, and buyers understand how APIs differ without manual",
+      "summary": "API Docs Comparison Assistant compares public API documentation across vendors, versions, or products and produces a sourced technical diff. It helps developer relations, solutions engineers, platform teams, and buyers understand how APIs differ without manually reading every...",
       "category": "Product",
       "accent": "rose",
       "tags": [
@@ -924,7 +924,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "startup-diligence-pack",
       "folder": "041-startup-diligence-pack",
       "title": "Startup Diligence Pack Generator",
-      "summary": "Startup Diligence Pack Generator turns a company URL, deck notes, or short investment memo into a sourced first-pass diligence packet. It gathers public evidence about the startup, market, customers, competitors, product claims, pricing, hiring, funding signal",
+      "summary": "Startup Diligence Pack Generator turns a company URL, deck notes, or short investment memo into a sourced first-pass diligence packet. It gathers public evidence about the startup, market, customers, competitors, product claims, pricing, hiring, funding signals, and risk areas...",
       "category": "Finance",
       "accent": "violet",
       "tags": [
@@ -946,7 +946,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "public-company-product-momentum",
       "folder": "042-public-company-product-momentum",
       "title": "Public Company Product Momentum Tracker",
-      "summary": "Public Company Product Momentum Tracker measures how quickly public companies are shipping, repositioning, and promoting products by combining public web signals into a source-backed momentum score. It helps investors, corporate strategy teams, product markete",
+      "summary": "Public Company Product Momentum Tracker measures how quickly public companies are shipping, repositioning, and promoting products by combining public web signals into a source-backed momentum score. It helps investors, corporate strategy teams, product marketers, and sales...",
       "category": "Finance",
       "accent": "violet",
       "tags": [
@@ -968,7 +968,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "earnings-call-prep-bot",
       "folder": "043-earnings-call-prep-bot",
       "title": "Earnings Call Prep Bot",
-      "summary": "Earnings Call Prep Bot creates a sourced briefing for investors, analysts, executives, and communications teams before a public company earnings call. It pulls recent product launches, pricing changes, customer signals, executive commentary, competitive news, ",
+      "summary": "Earnings Call Prep Bot creates a sourced briefing for investors, analysts, executives, and communications teams before a public company earnings call. It pulls recent product launches, pricing changes, customer signals, executive commentary, competitive news, regulatory context...",
       "category": "Finance",
       "accent": "violet",
       "tags": [
@@ -990,7 +990,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "alternative-data-feed",
       "folder": "044-alternative-data-feed",
       "title": "Alternative Data Feed",
-      "summary": "A source-backed feed that turns public web changes into market intelligence signals. The MVP watches job posts, pricing pages, product pages, docs, changelogs, and other public pages, then normalizes those observations into structured alternative data events f",
+      "summary": "A source-backed feed that turns public web changes into market intelligence signals. The MVP watches job posts, pricing pages, product pages, docs, changelogs, and other public pages, then normalizes those observations into structured alternative data events for investors...",
       "category": "Finance",
       "accent": "violet",
       "tags": [
@@ -1034,7 +1034,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "investor-crm-enricher",
       "folder": "046-investor-crm-enricher",
       "title": "Investor CRM Enricher",
-      "summary": "Investor CRM Enricher turns a founder's rough investor list into a source-backed CRM sheet with investor focus areas, founder fit, recent activity, and warm outreach angles. It is built for founders who have names, firms, domains, or exported CRM rows but do n",
+      "summary": "Investor CRM Enricher turns a founder's rough investor list into a source-backed CRM sheet with investor focus areas, founder fit, recent activity, and warm outreach angles. It is built for founders who have names, firms, domains, or exported CRM rows but do not have time to...",
       "category": "Finance",
       "accent": "violet",
       "tags": [
@@ -1055,7 +1055,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "portfolio-competitive-alerts",
       "folder": "047-portfolio-competitive-alerts",
       "title": "Portfolio Company Competitive Alerts",
-      "summary": "Portfolio Company Competitive Alerts watches a VC, accelerator, or corporate venture portfolio against direct competitors and category shifts, then sends evidence-backed alerts when competitors launch products, change pricing, gain search visibility, update po",
+      "summary": "Portfolio Company Competitive Alerts watches a VC, accelerator, or corporate venture portfolio against direct competitors and category shifts, then sends evidence-backed alerts when competitors launch products, change pricing, gain search visibility, update positioning, or...",
       "category": "Finance",
       "accent": "violet",
       "tags": [
@@ -1077,7 +1077,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "market-entrant-monitor",
       "folder": "048-market-entrant-monitor",
       "title": "Market Entrant Monitor",
-      "summary": "Market Entrant Monitor answers the recurring strategy question, \"Who is entering this market?\" It watches public web signals for new companies, product lines, regional launches, and repositioned incumbents, then produces a source-backed entrant digest for mark",
+      "summary": "Market Entrant Monitor answers the recurring strategy question, \"Who is entering this market?\" It watches public web signals for new companies, product lines, regional launches, and repositioned incumbents, then produces a source-backed entrant digest for market researchers...",
       "category": "Finance",
       "accent": "violet",
       "tags": [
@@ -1099,7 +1099,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "regulatory-exposure-scanner",
       "folder": "049-regulatory-exposure-scanner",
       "title": "Public Compliance Evidence Mapper",
-      "summary": "Idea 49 is a public compliance evidence mapper for sales, diligence, and partnership teams. It uses Massive MCP to collect and summarize public website claims that suggest GDPR, HIPAA, SOC 2, financial services, healthcare, education, or geography-specific com",
+      "summary": "Idea 49 is a public compliance evidence mapper for sales, diligence, and partnership teams. It uses Massive MCP to collect and summarize public website claims that suggest GDPR, HIPAA, SOC 2, financial services, healthcare, education, or geography-specific compliance...",
       "category": "Finance",
       "accent": "violet",
       "tags": [
@@ -1121,7 +1121,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "analyst-brief-generator",
       "folder": "050-analyst-brief-generator",
       "title": "Analyst Brief Generator",
-      "summary": "Analyst Brief Generator creates concise, source-backed briefs for market analysts, investors, strategy teams, and operators who need to understand a company, category, trend, or market event quickly. It combines live web discovery, rendered source collection, ",
+      "summary": "Analyst Brief Generator creates concise, source-backed briefs for market analysts, investors, strategy teams, and operators who need to understand a company, category, trend, or market event quickly. It combines live web discovery, rendered source collection, chatbot answers...",
       "category": "Finance",
       "accent": "violet",
       "tags": [
@@ -1143,7 +1143,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "candidate-company-research",
       "folder": "051-candidate-company-research",
       "title": "Candidate Company Research Assistant",
-      "summary": "Candidate Company Research Assistant helps job candidates quickly understand a company before applying, interviewing, or negotiating. It turns a company name, role, job posting URL, and candidate priorities into a sourced research brief covering business model",
+      "summary": "Candidate Company Research Assistant helps job candidates quickly understand a company before applying, interviewing, or negotiating. It turns a company name, role, job posting URL, and candidate priorities into a sourced research brief covering business model, products...",
       "category": "Recruiting",
       "accent": "green",
       "tags": [
@@ -1165,7 +1165,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "hiring-signal-tracker",
       "folder": "052-hiring-signal-tracker",
       "title": "Hiring Signal Tracker",
-      "summary": "Idea 52 is a hiring signal tracker for target accounts. It turns public job postings, careers pages, search results, and company announcements into a sourced account intelligence feed that explains where a company appears to be investing headcount and what tha",
+      "summary": "Idea 52 is a hiring signal tracker for target accounts. It turns public job postings, careers pages, search results, and company announcements into a sourced account intelligence feed that explains where a company appears to be investing headcount and what that may imply for...",
       "category": "Recruiting",
       "accent": "green",
       "tags": [
@@ -1187,7 +1187,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "skill-city-company-finder",
       "folder": "053-skill-city-company-finder",
       "title": "Skill City Company Finder",
-      "summary": "Skill City Company Finder answers the recruiting and sales research question, \"Which companies are hiring for this skill in this city right now?\" It searches localized job and company signals, verifies postings on rendered pages, clusters openings by employer,",
+      "summary": "Skill City Company Finder answers the recruiting and sales research question, \"Which companies are hiring for this skill in this city right now?\" It searches localized job and company signals, verifies postings on rendered pages, clusters openings by employer, and returns a...",
       "category": "Recruiting",
       "accent": "green",
       "tags": [
@@ -1209,7 +1209,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "job-post-analyzer",
       "folder": "054-job-post-analyzer",
       "title": "Recruiting Job Description Analyzer",
-      "summary": "Idea 54 is a recruiting job-description analyzer that turns public job posts into structured, source-backed hiring intelligence. It extracts role title, team, seniority, location, remote policy, required skills and tools, responsibilities, urgency signals, com",
+      "summary": "Idea 54 is a recruiting job-description analyzer that turns public job posts into structured, source-backed hiring intelligence. It extracts role title, team, seniority, location, remote policy, required skills and tools, responsibilities, urgency signals, compensation clues...",
       "category": "Recruiting",
       "accent": "green",
       "tags": [
@@ -1231,7 +1231,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "talent-market-map",
       "folder": "055-talent-market-map",
       "title": "Talent Market Map",
-      "summary": "Talent Market Map compares geography-specific public talent signals so hiring teams can decide where to recruit, open roles, launch sourcing campaigns, or place local employer-brand spend. It turns a role family and candidate profile into a ranked map of citie",
+      "summary": "Talent Market Map compares geography-specific public talent signals so hiring teams can decide where to recruit, open roles, launch sourcing campaigns, or place local employer-brand spend. It turns a role family and candidate profile into a ranked map of cities, countries, or...",
       "category": "Recruiting",
       "accent": "green",
       "tags": [
@@ -1253,7 +1253,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "competitor-hiring-trend-dashboard",
       "folder": "056-competitor-hiring-trend-dashboard",
       "title": "Competitor Hiring Trend Dashboard",
-      "summary": "Competitor Hiring Trend Dashboard monitors public job listings, careers pages, search-visible hiring pages, and role changes so product, strategy, finance, and recruiting teams can see where competitors are investing before those investments show up in launche",
+      "summary": "Competitor Hiring Trend Dashboard monitors public job listings, careers pages, search-visible hiring pages, and role changes so product, strategy, finance, and recruiting teams can see where competitors are investing before those investments show up in launches or headcount...",
       "category": "Recruiting",
       "accent": "green",
       "tags": [
@@ -1275,7 +1275,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "recruiting-personalization-writer",
       "folder": "057-recruiting-personalization-writer",
       "title": "Recruiting Personalization Writer",
-      "summary": "Recruiting Personalization Writer turns public company context into source-backed recruiting outreach for specific roles, hiring teams, and target candidate segments. It helps recruiters write credible messages that explain why the opportunity may matter now, ",
+      "summary": "Recruiting Personalization Writer turns public company context into source-backed recruiting outreach for specific roles, hiring teams, and target candidate segments. It helps recruiters write credible messages that explain why the opportunity may matter now, while keeping...",
       "category": "Recruiting",
       "accent": "green",
       "tags": [
@@ -1297,7 +1297,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "startup-role-quality-scorer",
       "folder": "058-startup-role-quality-scorer",
       "title": "Startup Role Quality Scorer",
-      "summary": "Idea 58 is a startup role quality scorer for public job pages. It helps candidates, career coaches, recruiters, and talent analysts evaluate whether a startup role appears clear, credible, seniority-appropriate, and worth deeper consideration based on the job ",
+      "summary": "Idea 58 is a startup role quality scorer for public job pages. It helps candidates, career coaches, recruiters, and talent analysts evaluate whether a startup role appears clear, credible, seniority-appropriate, and worth deeper consideration based on the job description...",
       "category": "Recruiting",
       "accent": "green",
       "tags": [
@@ -1318,7 +1318,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "layoff-reorg-signal-monitor",
       "folder": "059-layoff-reorg-signal-monitor",
       "title": "Layoff Reorg Signal Monitor",
-      "summary": "Idea 59 is a public layoff and reorg signal monitor for account, market, and talent intelligence teams. It watches public news, company pages, regulatory notices, WARN-style postings, blogs, press releases, leadership announcements, and search results, then tu",
+      "summary": "Idea 59 is a public layoff and reorg signal monitor for account, market, and talent intelligence teams. It watches public news, company pages, regulatory notices, WARN-style postings, blogs, press releases, leadership announcements, and search results, then turns scattered...",
       "category": "Recruiting",
       "accent": "green",
       "tags": [
@@ -1340,7 +1340,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "founder-operator-brief",
       "folder": "060-founder-operator-brief",
       "title": "Founder/Operator Background Brief Generator",
-      "summary": "Founder/Operator Background Brief Generator creates concise, source-backed background briefs on startup founders, executives, and senior operators. It gathers public web evidence, resolves identity ambiguity, builds a dated career and company timeline, and tur",
+      "summary": "Founder/Operator Background Brief Generator creates concise, source-backed background briefs on startup founders, executives, and senior operators. It gathers public web evidence, resolves identity ambiguity, builds a dated career and company timeline, and turns the evidence...",
       "category": "Recruiting",
       "accent": "green",
       "tags": [
@@ -1406,7 +1406,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "sla-evidence-collector",
       "folder": "063-sla-evidence-collector",
       "title": "SLA Evidence Collector From Vendor Docs",
-      "summary": "Idea 63 is a public contract and documentation research workflow that collects, cites, and compares vendor SLA claims from public sources. It is designed for procurement, vendor risk, and customer success teams that need evidence-backed summaries without loggi",
+      "summary": "Idea 63 is a public contract and documentation research workflow that collects, cites, and compares vendor SLA claims from public sources. It is designed for procurement, vendor risk, and customer success teams that need evidence-backed summaries without logging into customer...",
       "category": "Ops",
       "accent": "slate",
       "tags": [
@@ -1450,7 +1450,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "security-page-claims-monitor",
       "folder": "065-security-page-claims-monitor",
       "title": "Security Page Claims Monitor",
-      "summary": "Idea 65 is a public trust and compliance claims monitor for SOC 2, HIPAA, and GDPR language on company security, trust, privacy, legal, docs, and help center pages. It watches what a company says publicly, records evidence with sources, and highlights addition",
+      "summary": "Idea 65 is a public trust and compliance claims monitor for SOC 2, HIPAA, and GDPR language on company security, trust, privacy, legal, docs, and help center pages. It watches what a company says publicly, records evidence with sources, and highlights additions, removals, stale...",
       "category": "Ops",
       "accent": "slate",
       "tags": [
@@ -1471,7 +1471,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "support-article-freshness",
       "folder": "066-support-article-freshness",
       "title": "Support Article Freshness Checker",
-      "summary": "Idea 66 is a support article freshness checker for customer support, product operations, docs, and success teams. It uses Massive MCP to discover public help center articles, fetch rendered article pages, compare claims against current public product surfaces,",
+      "summary": "Idea 66 is a support article freshness checker for customer support, product operations, docs, and success teams. It uses Massive MCP to discover public help center articles, fetch rendered article pages, compare claims against current public product surfaces, and produce a...",
       "category": "Ops",
       "accent": "slate",
       "tags": [
@@ -1493,7 +1493,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "vendor-comparison-matrix",
       "folder": "067-vendor-comparison-matrix",
       "title": "Vendor Comparison Matrix Builder",
-      "summary": "Vendor Comparison Matrix Builder turns public vendor websites, docs, pricing pages, review pages, and search results into a sourced decision matrix for B2B software evaluation. It helps operators, procurement teams, founders, consultants, and RevOps leaders co",
+      "summary": "Vendor Comparison Matrix Builder turns public vendor websites, docs, pricing pages, review pages, and search results into a sourced decision matrix for B2B software evaluation. It helps operators, procurement teams, founders, consultants, and RevOps leaders compare vendors on...",
       "category": "Ops",
       "accent": "slate",
       "tags": [
@@ -1515,7 +1515,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "procurement-research-assistant",
       "folder": "068-procurement-research-assistant",
       "title": "Procurement Research Assistant",
-      "summary": "Idea 68 is a procurement research assistant for sourcing, vendor management, revenue, and market intelligence teams. It uses Massive MCP to discover public procurement opportunities, vendor requirements, award notices, buyer pages, supplier portals, and policy",
+      "summary": "Idea 68 is a procurement research assistant for sourcing, vendor management, revenue, and market intelligence teams. It uses Massive MCP to discover public procurement opportunities, vendor requirements, award notices, buyer pages, supplier portals, and policy documents, then...",
       "category": "Ops",
       "accent": "slate",
       "tags": [
@@ -1537,7 +1537,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "vendor-country-coverage-checker",
       "folder": "069-vendor-country-coverage-checker",
       "title": "Vendor Country Coverage Checker",
-      "summary": "Vendor Country Coverage Checker researches whether a public vendor appears able to serve a target country based on official documentation, terms, compliance pages, support pages, and pricing or availability pages. It helps procurement, operations, legal intake",
+      "summary": "Vendor Country Coverage Checker researches whether a public vendor appears able to serve a target country based on official documentation, terms, compliance pages, support pages, and pricing or availability pages. It helps procurement, operations, legal intake, revenue, and...",
       "category": "Ops",
       "accent": "slate",
       "tags": [
@@ -1559,7 +1559,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "public-api-availability-docs-monitor",
       "folder": "070-public-api-availability-docs-monitor",
       "title": "Public API Availability and Docs Monitor",
-      "summary": "Idea 70 in the Massive MCP rolling swarm: a monitor that watches public API documentation, status pages, changelogs, SDK docs, OpenAPI specs, and developer portals for signs that an API is available, deprecated, region-limited, newly launched, or materially ch",
+      "summary": "Idea 70 in the Massive MCP rolling swarm: a monitor that watches public API documentation, status pages, changelogs, SDK docs, OpenAPI specs, and developer portals for signs that an API is available, deprecated, region-limited, newly launched, or materially changed.",
       "category": "Ops",
       "accent": "slate",
       "tags": [
@@ -1581,7 +1581,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "geo-serp-local-business-checker",
       "folder": "071-geo-serp-local-business-checker",
       "title": "Geo SERP Local Business Checker",
-      "summary": "Geo SERP Local Business Checker audits how a local business appears in Google search results from specific cities, countries, and devices. It is built for agencies, franchise marketers, and local operators who need to know whether a business shows up in the or",
+      "summary": "Geo SERP Local Business Checker audits how a local business appears in Google search results from specific cities, countries, and devices. It is built for agencies, franchise marketers, and local operators who need to know whether a business shows up in the organic results...",
       "category": "Local",
       "accent": "cyan",
       "tags": [
@@ -1603,7 +1603,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "travel-price-comparison",
       "folder": "072-travel-price-comparison",
       "title": "Travel Price Comparison by Country and City",
-      "summary": "Travel Price Comparison by Country and City compares public travel prices across localized search results, OTA pages, airline or hotel direct pages, and city-specific inventory pages. It helps travelers, travel operators, and pricing analysts answer: \"What doe",
+      "summary": "Travel Price Comparison by Country and City compares public travel prices across localized search results, OTA pages, airline or hotel direct pages, and city-specific inventory pages. It helps travelers, travel operators, and pricing analysts answer: \"What does this trip, stay...",
       "category": "Local",
       "accent": "cyan",
       "tags": [
@@ -1625,7 +1625,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "local-competitor-finder",
       "folder": "073-local-competitor-finder",
       "title": "Local Competitor Finder",
-      "summary": "Idea 73 is a local business directory research tool for founders, marketers, agencies, franchise operators, and local sales teams. Given a business category and city, it uses Massive MCP to discover public businesses from Google SERPs and public websites, then",
+      "summary": "Idea 73 is a local business directory research tool for founders, marketers, agencies, franchise operators, and local sales teams. Given a business category and city, it uses Massive MCP to discover public businesses from Google SERPs and public websites, then returns a cited...",
       "category": "Local",
       "accent": "cyan",
       "tags": [
@@ -1647,7 +1647,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "regional-ecommerce-availability",
       "folder": "074-regional-ecommerce-availability",
       "title": "Regional Ecommerce Availability Checker",
-      "summary": "Regional Ecommerce Availability Checker audits whether ecommerce products are actually discoverable, purchasable, and correctly represented across countries, cities, and devices. It is built for marketplace operators, DTC brands, retail media teams, and ecomme",
+      "summary": "Regional Ecommerce Availability Checker audits whether ecommerce products are actually discoverable, purchasable, and correctly represented across countries, cities, and devices. It is built for marketplace operators, DTC brands, retail media teams, and ecommerce agencies that...",
       "category": "Local",
       "accent": "cyan",
       "tags": [
@@ -1690,7 +1690,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "local-regulation-summary",
       "folder": "076-local-regulation-summary",
       "title": "Local Regulation Summary Bot",
-      "summary": "Idea 76 is a local regulation summary bot that gathers public information about city, county, state, and country rules for a specific business activity or operational question. It uses Massive MCP to discover official government pages, fetch and render public ",
+      "summary": "Idea 76 is a local regulation summary bot that gathers public information about city, county, state, and country rules for a specific business activity or operational question. It uses Massive MCP to discover official government pages, fetch and render public sources, and...",
       "category": "Local",
       "accent": "cyan",
       "tags": [
@@ -1712,7 +1712,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "international-pricing-arbitrage",
       "folder": "077-international-pricing-arbitrage",
       "title": "International Pricing Arbitrage Tracker",
-      "summary": "Idea 77 is an international pricing arbitrage tracker for teams that need to compare what the same product, subscription, fare, or digital service costs across countries, cities, currencies, languages, and devices. It uses Massive MCP to fetch localized storef",
+      "summary": "Idea 77 is an international pricing arbitrage tracker for teams that need to compare what the same product, subscription, fare, or digital service costs across countries, cities, currencies, languages, and devices. It uses Massive MCP to fetch localized storefronts and search...",
       "category": "Local",
       "accent": "cyan",
       "tags": [
@@ -1734,7 +1734,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "localized-ad-landing-verifier",
       "folder": "078-localized-ad-landing-verifier",
       "title": "Localized Ad Landing Page Verifier",
-      "summary": "Localized Ad Landing Page Verifier checks whether paid-search ads and their landing pages stay consistent across country, city, language, and device targets. It helps growth, performance marketing, and compliance teams catch broken localized promises before sp",
+      "summary": "Localized Ad Landing Page Verifier checks whether paid-search ads and their landing pages stay consistent across country, city, language, and device targets. It helps growth, performance marketing, and compliance teams catch broken localized promises before spend scales.",
       "category": "Local",
       "accent": "cyan",
       "tags": [
@@ -1756,7 +1756,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "franchise-territory-research",
       "folder": "079-franchise-territory-research",
       "title": "Franchise Territory Research Assistant",
-      "summary": "Franchise Territory Research Assistant helps franchisors, franchise development teams, and multi-unit buyers evaluate where a concept can expand without relying on stale market decks or manual city-by-city Google research. It turns a proposed market, brand cat",
+      "summary": "Franchise Territory Research Assistant helps franchisors, franchise development teams, and multi-unit buyers evaluate where a concept can expand without relying on stale market decks or manual city-by-city Google research. It turns a proposed market, brand category, and...",
       "category": "Local",
       "accent": "cyan",
       "tags": [
@@ -1778,7 +1778,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "best-vendor-near-me-serp",
       "folder": "080-best-vendor-near-me-serp",
       "title": "Best Vendor Near Me SERP Trend Tracker",
-      "summary": "Best Vendor Near Me SERP Trend Tracker monitors recurring Google searches like \"best accountant near me,\" \"best HVAC company near me,\" and \"best wedding photographer near me\" across cities and devices. It helps local-market operators, agencies, marketplaces, a",
+      "summary": "Best Vendor Near Me SERP Trend Tracker monitors recurring Google searches like \"best accountant near me,\" \"best HVAC company near me,\" and \"best wedding photographer near me\" across cities and devices. It helps local-market operators, agencies, marketplaces, and category teams...",
       "category": "Local",
       "accent": "cyan",
       "tags": [
@@ -1800,7 +1800,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "multi-model-answer-comparison",
       "folder": "081-multi-model-answer-comparison",
       "title": "Multi-Model Answer Comparison",
-      "summary": "Multi-Model Answer Comparison shows how ChatGPT, Gemini, Perplexity, and Copilot answer the same buyer, research, or SEO question. It captures each answer, cited sources, source freshness, brand mentions, claim differences, and recommendation bias so teams can",
+      "summary": "Multi-Model Answer Comparison shows how ChatGPT, Gemini, Perplexity, and Copilot answer the same buyer, research, or SEO question. It captures each answer, cited sources, source freshness, brand mentions, claim differences, and recommendation bias so teams can see where AI...",
       "category": "AI",
       "accent": "indigo",
       "tags": [
@@ -1822,7 +1822,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "source-citation-quality-scorer",
       "folder": "082-source-citation-quality-scorer",
       "title": "Source Citation Quality Scorer",
-      "summary": "Idea 82 is a source citation quality scorer for chatbot answers. It uses Massive MCP to ask answer engines controlled questions, inspect the cited sources, fetch the cited pages with rendering, and grade whether the answer is actually supported by accessible, ",
+      "summary": "Idea 82 is a source citation quality scorer for chatbot answers. It uses Massive MCP to ask answer engines controlled questions, inspect the cited sources, fetch the cited pages with rendering, and grade whether the answer is actually supported by accessible, current...",
       "category": "AI",
       "accent": "indigo",
       "tags": [
@@ -1844,7 +1844,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "ai-brand-visibility-tracker",
       "folder": "083-ai-brand-visibility-tracker",
       "title": "AI Brand Visibility Tracker",
-      "summary": "Idea 83 is an AI brand visibility tracker for marketing, communications, SEO, and competitive intelligence teams that need to know how often their brand appears in AI answers, search summaries, chatbot citations, and source-backed recommendation flows. It uses",
+      "summary": "Idea 83 is an AI brand visibility tracker for marketing, communications, SEO, and competitive intelligence teams that need to know how often their brand appears in AI answers, search summaries, chatbot citations, and source-backed recommendation flows. It uses Massive MCP to run...",
       "category": "AI",
       "accent": "indigo",
       "tags": [
@@ -1866,7 +1866,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "prompt-to-research-report",
       "folder": "084-prompt-to-research-report",
       "title": "Prompt-to-Research-Report Agent",
-      "summary": "Idea 84 is a prompt-to-research-report agent that turns a natural-language research request into a structured, cited report using live web evidence. It is designed for users who know the question they need answered but do not want to manually plan searches, op",
+      "summary": "Idea 84 is a prompt-to-research-report agent that turns a natural-language research request into a structured, cited report using live web evidence. It is designed for users who know the question they need answered but do not want to manually plan searches, open tabs, compare...",
       "category": "AI",
       "accent": "indigo",
       "tags": [
@@ -1888,7 +1888,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "internet-consensus-checker",
       "folder": "085-internet-consensus-checker",
       "title": "Internet Consensus Checker",
-      "summary": "Idea 85 is an \"ask the internet twice\" research tool. Given a factual question, product claim, market belief, or buying assumption, it runs two independent web research passes through Massive MCP, compares the answers, and returns a sourced consensus report wi",
+      "summary": "Idea 85 is an \"ask the internet twice\" research tool. Given a factual question, product claim, market belief, or buying assumption, it runs two independent web research passes through Massive MCP, compares the answers, and returns a sourced consensus report with agreement level...",
       "category": "AI",
       "accent": "indigo",
       "tags": [
@@ -1910,7 +1910,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "ai-hallucination-verifier",
       "folder": "086-ai-hallucination-verifier",
       "title": "AI Hallucination Verifier",
-      "summary": "Idea 86 is an AI hallucination verifier that checks generated answers against fetched source pages. It uses Massive MCP to collect an AI answer, render the pages it cites or that the user supplies, extract checkable claims, and report which claims are supporte",
+      "summary": "Idea 86 is an AI hallucination verifier that checks generated answers against fetched source pages. It uses Massive MCP to collect an AI answer, render the pages it cites or that the user supplies, extract checkable claims, and report which claims are supported, contradicted...",
       "category": "AI",
       "accent": "indigo",
       "tags": [
@@ -1954,7 +1954,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "mcp-demo-app",
       "folder": "088-mcp-demo-app",
       "title": "MCP Demo App",
-      "summary": "MCP Demo App is a guided comparison workspace for showing how Massive MCP's web_fetch, web_search, and ai_chat_completion behave on the same research question. It puts raw page evidence, Google SERP context, and chatbot answers with sources into three synchron",
+      "summary": "MCP Demo App is a guided comparison workspace for showing how Massive MCP's webfetch, websearch, and aichatcompletion behave on the same research question. It puts raw page evidence, Google SERP context, and chatbot answers with sources into three synchronized columns so...",
       "category": "AI",
       "accent": "indigo",
       "tags": [
@@ -1976,7 +1976,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "research-notebook",
       "folder": "089-research-notebook",
       "title": "Automated Research Notebook",
-      "summary": "Idea 89 is an automated research notebook that captures sources, snippets, claims, and confidence as research happens. Instead of producing only a polished final answer, it maintains an auditable workspace where every useful page, search result, chatbot answer",
+      "summary": "Idea 89 is an automated research notebook that captures sources, snippets, claims, and confidence as research happens. Instead of producing only a polished final answer, it maintains an auditable workspace where every useful page, search result, chatbot answer, excerpt, and...",
       "category": "AI",
       "accent": "indigo",
       "tags": [
@@ -1998,7 +1998,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "ai-assistant-recommendation-research",
       "folder": "090-ai-assistant-recommendation-research",
       "title": "AI Assistant Recommendation Research Tool",
-      "summary": "AI Assistant Recommendation Research Tool asks multiple AI assistants the same buyer, product, or vendor research question and turns their answers into a sourced comparison of what each assistant recommends, cites, omits, and overstates. It helps product marke",
+      "summary": "AI Assistant Recommendation Research Tool asks multiple AI assistants the same buyer, product, or vendor research question and turns their answers into a sourced comparison of what each assistant recommends, cites, omits, and overstates. It helps product marketers, founders...",
       "category": "AI",
       "accent": "indigo",
       "tags": [
@@ -2042,7 +2042,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "restaurant-menu-pricing-tracker",
       "folder": "092-restaurant-menu-pricing-tracker",
       "title": "Restaurant Menu Pricing Tracker",
-      "summary": "Restaurant Menu Pricing Tracker monitors public menus and delivery marketplace listings to track item availability, menu structure, and price movement by city. It helps restaurant operators, investors, franchise teams, and local-market analysts answer question",
+      "summary": "Restaurant Menu Pricing Tracker monitors public menus and delivery marketplace listings to track item availability, menu structure, and price movement by city. It helps restaurant operators, investors, franchise teams, and local-market analysts answer questions like \"Are burger...",
       "category": "Personal",
       "accent": "orange",
       "tags": [
@@ -2064,7 +2064,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "apartment-listing-risk-scorer",
       "folder": "093-apartment-listing-risk-scorer",
       "title": "Apartment Listing Risk Scorer",
-      "summary": "Idea 93 is a public apartment listing enrichment and quality-risk scorer. Given a rental listing URL or pasted listing text, it uses Massive MCP to gather public page evidence, compare the listing against market and source signals, and return a renter-friendly",
+      "summary": "Idea 93 is a public apartment listing enrichment and quality-risk scorer. Given a rental listing URL or pasted listing text, it uses Massive MCP to gather public page evidence, compare the listing against market and source signals, and return a renter-friendly report with...",
       "category": "Personal",
       "accent": "orange",
       "tags": [
@@ -2086,7 +2086,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "event-discovery-bot",
       "folder": "094-event-discovery-bot",
       "title": "Event Discovery Bot",
-      "summary": "Idea 94 is an event discovery bot that finds local events by combining venue calendars, organizer pages, ticketing sites, community calendars, and localized Google SERPs. It turns scattered event listings into a clean feed with dates, venues, sources, ticket l",
+      "summary": "Idea 94 is an event discovery bot that finds local events by combining venue calendars, organizer pages, ticketing sites, community calendars, and localized Google SERPs. It turns scattered event listings into a clean feed with dates, venues, sources, ticket links, categories...",
       "category": "Personal",
       "accent": "orange",
       "tags": [
@@ -2128,7 +2128,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "used-car-listing-verifier",
       "folder": "096-used-car-listing-verifier",
       "title": "Used Car Listing Verifier",
-      "summary": "Idea 96 is a public listing and market research assistant for used cars. Given a vehicle listing URL or pasted listing text, it checks the public claims in the listing against visible marketplace pages, dealer pages, VIN-style public records when supplied by t",
+      "summary": "Idea 96 is a public listing and market research assistant for used cars. Given a vehicle listing URL or pasted listing text, it checks the public claims in the listing against visible marketplace pages, dealer pages, VIN-style public records when supplied by the user, reviewable...",
       "category": "Personal",
       "accent": "orange",
       "tags": [
@@ -2150,7 +2150,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "travel-itinerary-freshness",
       "folder": "097-travel-itinerary-freshness",
       "title": "Travel Itinerary Freshness Checker",
-      "summary": "Travel Itinerary Freshness Checker reviews a planned trip against current public information about attraction closures, seasonal hours, timed-entry requirements, transit disruptions, weather-sensitive access, and local visitor rules. It turns a static itinerar",
+      "summary": "Travel Itinerary Freshness Checker reviews a planned trip against current public information about attraction closures, seasonal hours, timed-entry requirements, transit disruptions, weather-sensitive access, and local visitor rules. It turns a static itinerary into a...",
       "category": "Personal",
       "accent": "orange",
       "tags": [
@@ -2172,7 +2172,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "personal-buying-research",
       "folder": "098-personal-buying-research",
       "title": "Personal Buying Research Assistant",
-      "summary": "Idea 98 is a personal buying research assistant for any product category. Given a user goal, budget, constraints, and location, it searches the public web, fetches product pages and reviews, compares tradeoffs, and returns a sourced shortlist with a clear reco",
+      "summary": "Idea 98 is a personal buying research assistant for any product category. Given a user goal, budget, constraints, and location, it searches the public web, fetches product pages and reviews, compares tradeoffs, and returns a sourced shortlist with a clear recommendation.",
       "category": "Personal",
       "accent": "orange",
       "tags": [
@@ -2194,7 +2194,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "internet-change-journal",
       "folder": "099-internet-change-journal",
       "title": "Internet Change Journal",
-      "summary": "Internet Change Journal tracks how a page, category, brand, or search result set evolves week by week. It turns recurring web scans into a dated journal of public internet changes: copy edits, page launches, category reshuffles, pricing-message shifts, SERP mo",
+      "summary": "Internet Change Journal tracks how a page, category, brand, or search result set evolves week by week. It turns recurring web scans into a dated journal of public internet changes: copy edits, page launches, category reshuffles, pricing-message shifts, SERP movement, screenshots...",
       "category": "Personal",
       "accent": "orange",
       "tags": [
@@ -2216,7 +2216,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "massive-mcp-playground",
       "folder": "100-massive-mcp-playground",
       "title": "Massive MCP Playground",
-      "summary": "Massive MCP Playground is a developer-facing sandbox for learning the exact shape of Massive MCP requests and responses. A user chooses a tool, fills in realistic parameters, runs the call, and sees the copyable MCP tool invocation beside the returned payload,",
+      "summary": "Massive MCP Playground is a developer-facing sandbox for learning the exact shape of Massive MCP requests and responses. A user chooses a tool, fills in realistic parameters, runs the call, and sees the copyable MCP tool invocation beside the returned payload, extracted sources...",
       "category": "Personal",
       "accent": "orange",
       "tags": [
@@ -2238,7 +2238,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "massive-brand-visibility-tracker",
       "folder": "101-massive-brand-visibility-tracker",
       "title": "Massive Brand Visibility Tracker",
-      "summary": "MVP for a daily AI brand-visibility tracker based on [opencolin/massive](https://github.com/opencolin/massive). It queries ChatGPT, Gemini, Perplexity, and Copilot, extracts brand mentions, and tracks share-of-voice drift.",
+      "summary": "MVP for a daily AI brand-visibility tracker based on opencolin/massive. It queries ChatGPT, Gemini, Perplexity, and Copilot, extracts brand mentions, and tracks share-of-voice drift.",
       "category": "Existing Builds",
       "accent": "graphite",
       "tags": [
@@ -2260,7 +2260,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "massive-consensus-engine",
       "folder": "102-massive-consensus-engine",
       "title": "Massive Consensus Engine",
-      "summary": "MVP for a multi-LLM consensus and lead-enrichment engine based on [opencolin/massive-consensus](https://github.com/opencolin/massive-consensus). It queries four assistants, compares answers and sources, and flags disagreement or hallucination risk.",
+      "summary": "MVP for a multi-LLM consensus and lead-enrichment engine based on opencolin/massive-consensus. It queries four assistants, compares answers and sources, and flags disagreement or hallucination risk.",
       "category": "Existing Builds",
       "accent": "graphite",
       "tags": [
@@ -2280,7 +2280,7 @@ window.MASSIVE_IDEAS_DATA = {
       "slug": "massive-meetup-finder",
       "folder": "103-massive-meetup-finder",
       "title": "Massive Meetup Finder",
-      "summary": "MVP for a city/topic meetup calendar finder based on [opencolin/massive-meetup](https://github.com/opencolin/massive-meetup). It discovers recurring Luma calendars, enriches organizers and events, scores fit, and exports a ranked table.",
+      "summary": "MVP for a city/topic meetup calendar finder based on opencolin/massive-meetup. It discovers recurring Luma calendars, enriches organizers and events, scores fit, and exports a ranked table.",
       "category": "Existing Builds",
       "accent": "graphite",
       "tags": [
