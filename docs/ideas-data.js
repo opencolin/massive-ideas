@@ -1,5 +1,5 @@
 window.MASSIVE_IDEAS_DATA = {
-  "generated_at": "2026-05-05T15:32:11.449Z",
+  "generated_at": "2026-05-06T05:32:38.749Z",
   "categories": [
     {
       "name": "Sales",

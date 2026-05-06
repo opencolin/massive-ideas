@@ -134,44 +134,6 @@ select {
   background: var(--ink);
 }
 
-.spotlight {
-  display: grid;
-  grid-template-columns: minmax(260px, 1fr) minmax(280px, 1.4fr);
-  gap: 18px;
-  margin-bottom: 18px;
-  padding: 18px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--panel);
-}
-
-.spotlight h2 {
-  margin: 0;
-  font-size: 24px;
-}
-
-.spotlight p {
-  margin: 8px 0 0;
-  color: var(--muted);
-  line-height: 1.5;
-}
-
-.sparkline {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(32px, 1fr));
-  gap: 6px;
-  align-items: end;
-}
-
-.sparkline button {
-  height: 64px;
-  padding: 0;
-  border-radius: 6px;
-  cursor: pointer;
-  color: #fff;
-  font-weight: 800;
-}
-
 .idea-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -265,8 +227,7 @@ select {
 }
 
 @media (max-width: 920px) {
-  .controls,
-  .spotlight {
+  .controls {
     grid-template-columns: 1fr;
   }
 

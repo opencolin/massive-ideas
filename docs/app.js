@@ -11,10 +11,7 @@ const tagSelect = document.querySelector("#tagSelect");
 const sortSelect = document.querySelector("#sortSelect");
 const searchInput = document.querySelector("#searchInput");
 const ideaGrid = document.querySelector("#ideaGrid");
-const spotlight = document.querySelector("#spotlight");
 const visibleCount = document.querySelector("#visibleCount");
-
-const accentVar = (accent) => "var(--" + accent + ")";
 
 function allTags() {
   return [...new Set(data.ideas.flatMap((idea) => idea.tags))].sort();
@@ -53,30 +50,9 @@ function filteredIdeas() {
   return ideas;
 }
 
-function renderSpotlight(ideas) {
-  const counts = data.categories.map((category) => ({
-    ...category,
-    count: ideas.filter((idea) => idea.category === category.name).length
-  }));
-  const top = ideas[0] ?? data.ideas[0];
-
-  spotlight.innerHTML = [
-    '<div>',
-    '<h2>' + top.id + ' ' + top.title + '</h2>',
-    '<p>' + top.summary + '</p>',
-    '</div>',
-    '<div class="sparkline">',
-    counts.map((category) => (
-      '<button title="' + category.name + ': ' + category.count + '" style="height:' + Math.max(18, category.count * 6) + 'px;background:' + accentVar(category.accent) + '" data-category="' + category.name + '">' + category.count + '</button>'
-    )).join(""),
-    '</div>'
-  ].join("");
-}
-
 function renderIdeas() {
   const ideas = filteredIdeas();
   visibleCount.textContent = ideas.length;
-  renderSpotlight(ideas);
 
   if (ideas.length === 0) {
     ideaGrid.innerHTML = '<div class="empty">No ideas match the current filters.</div>';
@@ -100,15 +76,6 @@ function renderIdeas() {
 }
 
 categoryFilters.addEventListener("click", (event) => {
-  const button = event.target.closest("button[data-category]");
-  if (!button) return;
-  state.category = button.dataset.category;
-  renderFilters();
-  tagSelect.value = state.tag;
-  renderIdeas();
-});
-
-spotlight.addEventListener("click", (event) => {
   const button = event.target.closest("button[data-category]");
   if (!button) return;
   state.category = button.dataset.category;
